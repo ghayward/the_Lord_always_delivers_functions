@@ -11,9 +11,12 @@ That's a Fried Chicken Man.
 """
 
 """
+
 👇🏾 Function 1
+
 - This first function is called hayward_percentiler_Python()
 - It helps me get a quick visual on how outliers are exploding the data.
+
 """
 
 def hayward_percentiler_Python(dataframe, feature_ie_column_to_check):
@@ -40,9 +43,12 @@ def hayward_percentiler_Python(dataframe, feature_ie_column_to_check):
     plt.show()
 
 """
+
 👇🏾 Function 2
+
 - This second function is called hayward_distribution_visualizer_and_fitter()
 - It helps me get a quick look at the distribution, how normal the distribution is, and what kinds of more generalizable distributions best describe this data.
+
 """
 
 def hayward_distribution_visualizer_and_fitter(df, col_str, bins):
@@ -66,14 +72,17 @@ def hayward_distribution_visualizer_and_fitter(df, col_str, bins):
 
 
 """
+
 👇🏾 Function 3
+
 - This third function is called df_iqr_adjust_romain_hayward()
 - This critical function is what I use to eliminate outliers in a dataframe.
 - The definition for what constitutes an outlier was first laid out in the following book:
 - "Statistics in a Nutshell, 2nd Edition" by Sarah Boslaugh
----Link: https://www.oreilly.com/library/view/statistics-in-a/9781449361129/
+---- Link: https://www.oreilly.com/library/view/statistics-in-a/9781449361129/
 - I wrote this function after reading a post by a SWE called Romain here.
----Link: https://www.back2code.me/2017/08/outliers/
+---- Link: https://www.back2code.me/2017/08/outliers/
+
 """
 
 def df_iqr_adjust_romain_hayward(df, list_of_columns_to_modify):
@@ -87,11 +96,14 @@ def df_iqr_adjust_romain_hayward(df, list_of_columns_to_modify):
 
 
 """
+
 👇🏾 Function 4
+
 - This fourth function is called celery_hayward_spliced_percentiler()
 - It was written by Étienne Célèry in response to a question I asked on Stack Overflow.
----Link: https://stackoverflow.com/questions/71608038/how-to-re-write-lambda-function-via-pandas-apply-method-to-beat-famous-val/71608269#71608269
+---- Link: https://stackoverflow.com/questions/71608038/how-to-re-write-lambda-function-via-pandas-apply-method-to-beat-famous-val/71608269#71608269
 - Below, I've particularized the function for this exam, and it's very useful in computing what I call "sub-percents" in multi-level indexed Pandas dataframes. This function will be a useful component of my forthcoming mega functions.
+
 """
 
 def celery_hayward_spliced_percentiler(assignment_value,count_value):
@@ -101,11 +113,14 @@ def celery_hayward_spliced_percentiler(assignment_value,count_value):
           return round((100.0*count_value) / (size_count_control) ,2)
 
 """
+
 👇🏾 Function 5
+
 - This fifth function is called get_df_name()
 - I found this function on Stack Overflow here. It was written by 'Min'.
----Link: https://stackoverflow.com/questions/31727333/get-the-name-of-a-pandas-dataframe/50620134#50620134
+---- Link: https://stackoverflow.com/questions/31727333/get-the-name-of-a-pandas-dataframe/50620134#50620134
 - As you will see, I'll have many dataframes flying around, and this function gets helps resolve a pain in Python and Pandas, which is that it's hard to convert an object or a variable's name into a string, so it's hard to stay organized.
+
 """
 
 def get_df_name(df):
@@ -114,7 +129,9 @@ def get_df_name(df):
 
 
 """
+
 👇🏾 Function 6
+
 - This sixth function is called hayward_two_sample_proportion_data_uploader()
 - This function will:
 ---- first sanity the counts of the data for imbalances, and print the results,
@@ -123,7 +140,8 @@ def get_df_name(df):
 ---- which I will then covert later into a Pandas dataframe.
 -------- This dataframe will look like a report that we can quickly read to discuss results.
 - Critically, as discussed above, to avoid Simspon's Paradox, this function calculates everything on a per guest country basis.
--This function is best utilized in a for loop.
+- This function is best utilized in a for loop.
+
 """
 
 def hayward_two_sample_proportion_data_uploader(df, country_letter_string, binary_success_column_string):
@@ -216,6 +234,7 @@ def hayward_two_sample_proportion_data_uploader(df, country_letter_string, binar
 """
 
 👇🏾 Function 7
+
 - This seventh function is called hayward_diff_of_means_data_party_uploader()
 - This function will:
 ---- first sanity the counts of the data for imbalances, and print the results,
@@ -226,6 +245,7 @@ def hayward_two_sample_proportion_data_uploader(df, country_letter_string, binar
 - Critically, as discussed above, to avoid Simspon's Paradox, this function calculates everything on a per guest country basis.
 - This function is best utilized in a for loop.
 - This function is basically the same as the last one, but it just uses a different statistical test.
+
 """
 
 def hayward_diff_of_means_data_party_uploader(df, country_letter_string, column_to_analyze):
@@ -298,9 +318,12 @@ def hayward_diff_of_means_data_party_uploader(df, country_letter_string, column_
     p_value.append(p_value_readout[0])
 
 """
-👇🏾 Function 8¶
+
+👇🏾 Function 8
+
 - This eighth function is called hayward_experiment_duration_checker()
-- It'll come in handy for picking the duration of the experiment.
+- It'll come in handy for picking the duration of an experiment.
+
 """
 
 def hayward_experiment_duration_checker(dollar_size_effect,df, column_to_analyze_string, country_string):
@@ -329,5 +352,10 @@ def hayward_experiment_duration_checker(dollar_size_effect,df, column_to_analyze
 
 
 """
-#TheLordAlwaysDelivers
+
+#TheLordAlwaysDelivers!
+
+:)
+
+God Bless You // Sending the Good Vibes!
 """
